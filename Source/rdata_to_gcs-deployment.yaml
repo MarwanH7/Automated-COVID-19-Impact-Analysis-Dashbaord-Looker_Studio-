@@ -1,0 +1,48 @@
+###
+### A complete description of a Prefect Deployment for flow 'rdata-to-gcs'
+###
+name: Raw to GCP ETL
+description: The main ETL function
+version: 87d407f3c676ec472120398456cc8843
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: default-agent-pool
+tags: []
+parameters: {}
+schedule:
+  cron: 30 11 * * 5
+  timezone: null
+  day_or: true
+is_schedule_active: true
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: rdata-to-gcs
+manifest_path: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  _block_document_id: 40b09bc7-3325-4ea3-84d9-fe21c1c2cc50
+  _block_document_name: anonymous-4f2bde47-e924-49b4-b0af-bd60180c4baa
+  _is_anonymous: true
+  block_type_slug: process
+  _block_type_slug: process
+storage: null
+path: /Users/marwan/Desktop/Data_Science/Data_Engineering:Analytics/Projects/Covid_Project_P_1/Iteration_1_Automation/Source
+entrypoint: etl_rawdata_to_gcp.py:rdata_to_gcs
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-11-29T17:08:50.024273+00:00'
+triggers: []
+enforce_parameter_schema: null
