@@ -1,0 +1,40 @@
+###
+### A complete description of a Prefect Deployment for flow 'dbt-production-m-run'
+###
+name: dbt production model
+description: null
+version: 76175e7e29aa0b51851cac3fc4bcc8f8
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {}
+schedule:
+  cron: 30 15 * * 5
+  timezone: null
+  day_or: true
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: dbt-production-m-run
+manifest_path: null
+storage: null
+path: /Users/marwan/Desktop/Data_Science/Data_Engineering:Analytics/Projects/Covid_Project_P_1/Iteration_1_Automation/Source
+entrypoint: run_dbt_productionM.py:dbt_production_m_run
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
