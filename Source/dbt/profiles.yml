@@ -1,0 +1,13 @@
+Covid_Dashboard: # this needs to match the profile in your dbt_project.yml file
+    target: dev
+    outputs:
+      dev:
+        type: bigquery
+        method: service-account
+        keyfile: pathttoauthkey # replace this with the full path to your keyfile
+        project: Project_ID # Replace this with your project id
+        dataset: dbt_name_etc # Replace this with dbt_your_name, e.g. dbt_bilbo
+        threads: 1
+        timeout_seconds: 300
+        location: US ## watch out, this has to match your project location or it might give you trouble
+        priority: interactive

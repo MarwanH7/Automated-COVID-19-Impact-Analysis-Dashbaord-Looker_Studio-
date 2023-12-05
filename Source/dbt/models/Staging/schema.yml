@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+    - name: staging
+      database: 
+      schema: Covid_19 ## Replace this with your schema name  (should match the schema name in your BigQuery project
+
+      tables:
+        - name: Covid_data
+         # freshness:
+           # error_after: {count: 6, period: hour}
+
+
+models:
+
+    - name: stg_covid
+      description: Covid_data after initial column of interest selection for dashboard, defined schema.
+      tags: staging
+    

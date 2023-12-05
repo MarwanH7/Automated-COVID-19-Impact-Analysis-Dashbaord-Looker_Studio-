@@ -1,0 +1,24 @@
+version: 2
+
+models:
+
+    - name: Production_Covid_Data
+      description: COVID table after selecting desired columns, cleaning and preprocessing. Ready for dashboard (Gold layer)
+      tags: production
+
+      
+      columns:
+        - name: total_cases
+          tests:
+            - not_null:
+                severity: error
+          
+        - name: continent
+          tests:
+            - not_null:
+                severity: error      
+      
+        - name: country
+          tests:
+            - not_null:
+                severity: error 
