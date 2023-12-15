@@ -108,7 +108,7 @@ Dashboard diagram and link to looker dash. Be sure to adjust the date selection 
 ## Project Structure
 - **`/Infrastructure`:** Scripts for terraform resource creation.
 - **`/Source`:** Prefect work flow orchestration scripts and deployment files 
-- **`/Source/dbt:** Staging and production model scripts
+- **`/Source/dbt`:** Staging and production model scripts
 
 
 ## Reproducibility 
