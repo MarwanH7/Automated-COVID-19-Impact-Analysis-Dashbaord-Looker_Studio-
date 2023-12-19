@@ -5,11 +5,11 @@
 ## Overview
 <div align="justify">
   
-**Project Objective**: This project is the second iteration of a manual Covid-19 impact analysis dashboard. It aims to automate the process by creating a pipeline for the COVID-19 dashboard. The pipline leverages Google Cloud services to create a seamless process for extracting, transforming, and visualizing COVID-19 metrics and terraform (IaC). The initial metrics the dashboard analysis are cases, deaths, vaccinations and their respective rates, globally, per continent and per country. The initial manual dashboard repo can be found [here](https://github.com/MarwanH7/COVID-19-Impact-Analysis-Dashbaord/tree/main)
+**Project Objective**: This project is the second iteration of a manual Covid-19 impact analysis dashboard. It aims to automate the process by creating a pipeline for the COVID-19 dashboard. The pipline leverages Google Cloud services to create a seamless process for extracting, transforming, and visualizing COVID-19 metrics and leveraging Terraform (IaC) to manage cloud resourcs. The initial metrics the dashboard analyzes are cases, deaths, vaccinations and their respective rates, globally, per continent and per country. Which gives the user the ability to drill down into data, from general to specific. The initial manual dashboard repo can be found [here](https://github.com/MarwanH7/COVID-19-Impact-Analysis-Dashbaord/tree/main)
 
 **Target Audience (clients)**: This project has a wide range of clients who would want to make data-driven decisions, here are some example industries:
 
-- **Hospital Administrators and Healthcare Facilities**: Provides insights for hospitals, healthcare professionals, and public health agencies to keep an eye on important metrics. Helps in resource allocation, understanding disease spread, and vaccine distribution strategies.
+- **Hospital Administrators and Healthcare Facilities**: Provides insights for hospitals, healthcare professionals, and public health agencies to keep an eye on important metrics, which can potentially helps in resource allocation, understanding disease spread, and vaccine distribution strategies allowing the user to adjust their policies and protocols accordingly.
   
 - **Government Health Departments and Policy Makers**: Assists policymakers in understanding the impact of measures taken, predicting disease trends, and making informed decisions on public health policies and interventions.
   
@@ -35,6 +35,7 @@
   -  The data is then loaded to Google Cloud Storage for initial processing (casting,nulls).
   -  The data is then moved from Google Cloud storage bucket to a BigQuery data warehouse for processing.
   -  Using dbt the data is transformed and specific desired columns are queried for the dashboard.
+  -  These 6 steps are all scheduled and ran without the need of the user. 
  
 - **Dashboard Creation:**
   
