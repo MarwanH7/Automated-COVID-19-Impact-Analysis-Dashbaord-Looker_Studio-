@@ -1,5 +1,5 @@
 
-# [Automated COVID-19 Impact Analysis Dashboard](https://lookerstudio.google.com/u/1/reporting/548774be-64bd-4723-9ecf-5298514072e6/page/XpNkD)
+# [Automated COVID-19 Impact Analysis Dashboard](https://lookerstudio.google.com/u/0/reporting/548774be-64bd-4723-9ecf-5298514072e6/page/XpNkD?s=kDIHNCaHr9M)
 
 
 ## Overview
