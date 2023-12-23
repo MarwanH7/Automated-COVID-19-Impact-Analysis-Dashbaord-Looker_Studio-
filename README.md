@@ -5,7 +5,7 @@
 ## Overview
 <div align="justify">
   
-**Project Objective**: This project is the second iteration of a manual Covid-19 impact analysis dashboard. It aims to automate the process by creating a full data pipeline. The pipline leverages Google Cloud services to create a seamless process for extracting, loading, transforming, and visualizing important COVID-19 metrics and leveraging Terraform (IaC) to manage those cloud resourcs. The initial metrics the dashboard analyzes are cases, deaths, vaccinations and their respective rates, globally, per continent and per country. Which gives the user the ability to drill down into the data, from general to specific. The initial manual dashboard repo can be found [here](https://github.com/MarwanH7/COVID-19-Impact-Analysis-Dashbaord/tree/main)
+**Project Objective**: This project is the second iteration of a manual Covid-19 impact analysis dashboard. It aims to automate the process by creating a full data pipeline. The pipline leverages Google Cloud services to create a seamless process for extracting, loading, transforming, and visualizing important COVID-19 metrics and leveraging Terraform (IaC) to manage those cloud resourcs. The initial metrics the dashboard analyzes are cases, deaths, vaccinations and their respective rates. The data can be queried and visualized globally, per continent and per country. Which gives the user the ability to drill down into the data, from general to specific. The initial manual dashboard repo can be found [here](https://github.com/MarwanH7/COVID-19-Impact-Analysis-Dashbaord/tree/main)
 
 **Target Audience (clients)**: This project has a wide range of clients who would want to make data-driven decisions, here are some example industries:
 
@@ -18,7 +18,7 @@
     
 ## Readme.md Content 
 
-* ELT Overview 
+* Extract,Load,Transform (ELT) Overview
 * Flow Diagram
 * Full Pipeline step by step 
 * Reproducibility 
@@ -49,7 +49,7 @@
 
 
 
-## Extract,Load,Transform (ELT) Step by Step 
+## Full Pipeline Step by Step 
 
 
   
